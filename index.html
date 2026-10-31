@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monalisha S | Data Analyst Aspirant</title>
+  <meta name="description" content="Monalisha S – B.Tech AI & Data Science student. Aspiring Data Analyst skilled in Python, SQL, Power BI, and Excel. Portfolio showcasing real projects and skills." />
+  <meta name="keywords" content="Monalisha S, Data Analyst, Python, SQL, Power BI, Excel, Pandas, AVS Engineering College, Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated Background -->
+  <div class="bg-animation">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Particles -->
+  <div class="particles" id="particles"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Monalisha</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="mailto:monuselvaraj67@gmail.com" class="btn-resume" id="resume-btn">
+        <span>Resume</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Open to Internships & Entry-level Roles
+      </div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Monalisha S</span>
+      </h1>
+      <div class="hero-subtitle-row">
+        <span class="typed-prefix">I'm a </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor">|</span>
+      </div>
+      <p class="hero-description">
+        B.Tech <strong class="highlight">AI & Data Science</strong> student at AVS Engineering College, Salem.<br />
+        Passionate about turning raw data into <strong class="highlight">meaningful insights</strong> and building smart dashboards that drive decisions.
+      </p>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-number" data-target="5">0</span><span>+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="4">0</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="7">0</span><span>.86</span>
+          <span class="stat-label">CGPA</span>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary" id="view-work-btn">View My Work</a>
+        <a href="#contact" class="btn-secondary" id="contact-me-btn">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="data-visualization">
+        <div class="chart-container">
+          <div class="chart-bar" style="--h:75%;--delay:0s;" data-label="Python"></div>
+          <div class="chart-bar" style="--h:85%;--delay:0.1s;" data-label="SQL"></div>
+          <div class="chart-bar" style="--h:80%;--delay:0.2s;" data-label="Power BI"></div>
+          <div class="chart-bar" style="--h:70%;--delay:0.3s;" data-label="Excel"></div>
+          <div class="chart-bar" style="--h:72%;--delay:0.4s;" data-label="Pandas"></div>
+          <div class="chart-bar" style="--h:60%;--delay:0.5s;" data-label="ML"></div>
+        </div>
+        <div class="floating-card card-1">
+          <div class="card-icon">📊</div>
+          <div class="card-info">
+            <span class="card-title">Power BI</span>
+            <span class="card-value">Dashboard ✓</span>
+          </div>
+        </div>
+        <div class="floating-card card-2">
+          <div class="card-icon">🐍</div>
+          <div class="card-info">
+            <span class="card-title">Python & ML</span>
+            <span class="card-value">Trained ✓</span>
+          </div>
+        </div>
+        <div class="floating-card card-3">
+          <div class="card-icon">🗄️</div>
+          <div class="card-info">
+            <span class="card-title">SQL</span>
+            <span class="card-value">JOINs & More</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// about_me.py</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-wrapper">
+          <div class="avatar-ring">
+            <div class="avatar-circle">
+              <img src="profile.jpg" alt="Monalisha S – Data Analyst" class="avatar-photo" />
+            </div>
+          </div>
+          <div class="about-contact-info">
+            <a href="tel:9629804504" class="contact-pill" id="phone-link">
+              <span>📞</span> 9629804504
+            </a>
+            <a href="mailto:monuselvaraj67@gmail.com" class="contact-pill" id="email-pill-link">
+              <span>📧</span> monuselvaraj67@gmail.com
+            </a>
+          </div>
+          <div class="about-social">
+            <a href="https://github.com/monuselvaraj67-netizen" target="_blank" rel="noopener" class="social-link" id="github-link" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/monalisha-s-134575328" target="_blank" rel="noopener" class="social-link" id="linkedin-link" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="mailto:monuselvaraj67@gmail.com" class="social-link" id="email-social-link" aria-label="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="about-objective glass-card">
+            <span class="obj-tag">🎯 Career Objective</span>
+            <p>
+              Motivated <strong class="highlight">B.Tech AI & Data Science</strong> student seeking a 
+              <strong class="highlight">Data Analyst Internship</strong> or entry-level opportunity. 
+              Skilled in Python, SQL, Microsoft Excel and Power BI, with hands-on experience in 
+              data analysis, visualization and dashboard development. Eager to apply analytical skills 
+              to real-world business problems and continuously improve technical skills.
+            </p>
+          </div>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">🎓</span>
+              <span>B.Tech AI & DS – AVS Engineering College, Salem</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">📊</span>
+              <span>Data-driven problem solver & dashboard builder</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🤝</span>
+              <span>Tamil (Native) | English (Working Proficiency)</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🚀</span>
+              <span>Continuous learner – open to real-world challenges</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// skills.py</span>
+        <h2 class="section-title">Tech <span class="gradient-text">Stack</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category glass-card">
+          <h3 class="category-title"><span class="cat-icon">⚙️</span> Programming</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-header"><span class="skill-name">Python</span><span class="skill-percent">80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80" style="--color:#3b82f6;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span class="skill-name">Pandas</span><span class="skill-percent">78%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="78" style="--color:#06b6d4;"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category glass-card">
+          <h3 class="category-title"><span class="cat-icon">🗄️</span> Database</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-header"><span class="skill-name">SQL</span><span class="skill-percent">82%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="82" style="--color:#8b5cf6;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span class="skill-name">MySQL</span><span class="skill-percent">78%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="78" style="--color:#a78bfa;"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category glass-card">
+          <h3 class="category-title"><span class="cat-icon">📊</span> Visualization</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-header"><span class="skill-name">Power BI</span><span class="skill-percent">80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80" style="--color:#f59e0b;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span class="skill-name">Microsoft Excel</span><span class="skill-percent">82%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="82" style="--color:#10b981;"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category glass-card">
+          <h3 class="category-title"><span class="cat-icon">🌐</span> Web Technologies</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-header"><span class="skill-name">HTML & CSS</span><span class="skill-percent">75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75" style="--color:#ec4899;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span class="skill-name">JavaScript</span><span class="skill-percent">65%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="65" style="--color:#f97316;"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category glass-card skill-wide">
+          <h3 class="category-title"><span class="cat-icon">💡</span> Analytics & Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Data Cleaning</span>
+            <span class="skill-tag">Data Analysis</span>
+            <span class="skill-tag">Basic Statistics</span>
+            <span class="skill-tag">EDA</span>
+            <span class="skill-tag">Dashboard Development</span>
+            <span class="skill-tag">KPI Tracking</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">MySQL Workbench</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Linear Regression</span>
+            <span class="skill-tag">Decision Tree</span>
+            <span class="skill-tag">Random Forest</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// projects.py</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-filter" id="projectsFilter">
+        <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+        <button class="filter-btn" data-filter="sql" id="filter-sql">SQL</button>
+        <button class="filter-btn" data-filter="powerbi" id="filter-powerbi">Power BI</button>
+        <button class="filter-btn" data-filter="excel" id="filter-excel">Excel</button>
+        <button class="filter-btn" data-filter="python" id="filter-python">Python & ML</button>
+        <button class="filter-btn" data-filter="web" id="filter-web">Web</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- Project 1: SQL -->
+        <div class="project-card glass-card" data-category="sql">
+          <div class="project-header">
+            <span class="project-icon">🛒</span>
+            <div class="project-links">
+              <a href="https://github.com/monuselvaraj67-netizen" target="_blank" rel="noopener" class="project-link" id="proj1-github" aria-label="View on GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-tech-badge sql-badge">SQL</div>
+          <h3 class="project-title">E-Commerce Business Performance Analysis</h3>
+          <p class="project-desc">Analyzed business data using advanced SQL techniques including JOINs, subqueries, aggregate functions, GROUP BY, HAVING clauses, and window functions to derive actionable business insights.</p>
+          <div class="project-tags">
+            <span class="ptag">SQL</span><span class="ptag">MySQL</span><span class="ptag">JOINs</span><span class="ptag">Window Functions</span><span class="ptag">Aggregates</span>
+          </div>
+        </div>
+
+        <!-- Project 2: Power BI -->
+        <div class="project-card glass-card" data-category="powerbi">
+          <div class="project-header">
+            <span class="project-icon">📊</span>
+            <div class="project-links">
+              <a href="https://github.com/monuselvaraj67-netizen" target="_blank" rel="noopener" class="project-link" id="proj2-github" aria-label="View on GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-tech-badge pbi-badge">Power BI</div>
+          <h3 class="project-title">E-Commerce Sales & Customer Analytics Dashboard</h3>
+          <p class="project-desc">Built an interactive, dynamic sales dashboard in Power BI featuring KPI cards, slicers for filtering, and DAX measures. Enables stakeholders to monitor sales trends and customer behavior at a glance.</p>
+          <div class="project-tags">
+            <span class="ptag">Power BI</span><span class="ptag">DAX</span><span class="ptag">KPI Cards</span><span class="ptag">Slicers</span><span class="ptag">Dashboard</span>
+          </div>
+        </div>
+
+        <!-- Project 3: Excel -->
+        <div class="project-card glass-card" data-category="excel">
+          <div class="project-header">
+            <span class="project-icon">📋</span>
+            <div class="project-links">
+              <a href="https://github.com/monuselvaraj67-netizen" target="_blank" rel="noopener" class="project-link" id="proj3-github" aria-label="View on GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-tech-badge excel-badge">Excel</div>
+          <h3 class="project-title">Employee Sales & Performance Dashboard</h3>
+          <p class="project-desc">Created a comprehensive interactive Excel dashboard using advanced functions: XLOOKUP, VLOOKUP, dynamic formulas, and KPI calculations. Provides deep insights into team performance metrics and sales targets.</p>
+          <div class="project-tags">
+            <span class="ptag">Excel</span><span class="ptag">XLOOKUP</span><span class="ptag">VLOOKUP</span><span class="ptag">KPI</span><span class="ptag">Formulas</span>
+          </div>
+        </div>
+
+        <!-- Project 4: Python ML -->
+        <div class="project-card glass-card" data-category="python">
+          <div class="project-header">
+            <span class="project-icon">🏠</span>
+            <div class="project-links">
+              <a href="https://github.com/monuselvaraj67-netizen" target="_blank" rel="noopener" class="project-link" id="proj4-github" aria-label="View on GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-tech-badge python-badge">Python & ML</div>
+          <h3 class="project-title">House Price Prediction</h3>
+          <p class="project-desc">Performed comprehensive data analysis and built prediction models using Pandas for data preprocessing, and implemented Linear Regression, Decision Tree, and Random Forest algorithms to predict housing prices accurately.</p>
+          <div class="project-tags">
+            <span class="ptag">Python</span><span class="ptag">Pandas</span><span class="ptag">Linear Regression</span><span class="ptag">Decision Tree</span><span class="ptag">Random Forest</span>
+          </div>
+        </div>
+
+        <!-- Project 5: Web -->
+        <div class="project-card glass-card" data-category="web">
+          <div class="project-header">
+            <span class="project-icon">🛒</span>
+            <div class="project-links">
+              <a href="https://github.com/monuselvaraj67-netizen" target="_blank" rel="noopener" class="project-link" id="proj5-github" aria-label="View on GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-tech-badge web-badge">HTML/CSS/JS</div>
+          <h3 class="project-title">FreshCart – Grocery Shopping Website</h3>
+          <p class="project-desc">Developed a fully responsive grocery e-commerce website using HTML, CSS and JavaScript. Includes product listing, search functionality, cart management features, and a clean mobile-friendly UI.</p>
+          <div class="project-tags">
+            <span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span><span class="ptag">Responsive</span><span class="ptag">Cart</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// experience.py</span>
+        <h2 class="section-title">Experience & <span class="gradient-text">Training</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot dot-intern"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Data Science & Power BI Intern</h3>
+                <p class="timeline-company">🏢 Internship Organization</p>
+              </div>
+              <span class="timeline-date">3 Months</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Worked on practical data analysis and visualization using <strong>Python, Pandas and Power BI</strong></li>
+              <li>Created interactive Power BI dashboards to present business insights to stakeholders</li>
+              <li>Performed data cleaning, analysis and visualization on real-world datasets</li>
+              <li>Developed a <strong>House Price Prediction</strong> project using machine learning algorithms</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot dot-course"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Data Analyst Course</h3>
+                <p class="timeline-company">📚 Training Program</p>
+              </div>
+              <span class="timeline-date">15 Days</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Completed practical training in <strong>SQL, Python, Excel and Power BI</strong></li>
+              <li>Practiced data cleaning, data analysis, visualization and dashboard creation</li>
+              <li>Worked on hands-on exercises and real-world analytical projects</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// education.py</span>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+      </div>
+      <div class="education-grid">
+        <div class="edu-card glass-card edu-main">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-content">
+            <h3 class="edu-degree">B.Tech – Artificial Intelligence & Data Science</h3>
+            <p class="edu-school">AVS Engineering College, Salem</p>
+            <div class="edu-meta">
+              <span class="edu-cgpa">CGPA: <strong>7.86</strong></span>
+              <span class="edu-year">Expected: 2028 (3rd Year)</span>
+            </div>
+            <p class="edu-desc">Specializing in AI, machine learning, and data science. Building strong foundations in data analysis, programming and statistical methods.</p>
+            <div class="edu-subjects">
+              <span class="edu-sub-tag">AI & ML</span>
+              <span class="edu-sub-tag">Data Science</span>
+              <span class="edu-sub-tag">Statistics</span>
+              <span class="edu-sub-tag">Python Programming</span>
+              <span class="edu-sub-tag">Database Systems</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section certs-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// certifications.py</span>
+        <h2 class="section-title">My <span class="gradient-text">Certifications</span></h2>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card glass-card">
+          <div class="cert-glow"></div>
+          <div class="cert-badge">📊</div>
+          <h4 class="cert-name">Data Analytics</h4>
+          <p class="cert-issuer">Professional Certification</p>
+          <div class="cert-bar"></div>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-glow"></div>
+          <div class="cert-badge">📈</div>
+          <h4 class="cert-name">Power BI</h4>
+          <p class="cert-issuer">Data Visualization Certification</p>
+          <div class="cert-bar"></div>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-glow"></div>
+          <div class="cert-badge">🐍</div>
+          <h4 class="cert-name">Python Basics</h4>
+          <p class="cert-issuer">Programming Certification</p>
+          <div class="cert-bar"></div>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-glow"></div>
+          <div class="cert-badge">🤖</div>
+          <h4 class="cert-name">Data Science</h4>
+          <p class="cert-issuer">Data Science Certification</p>
+          <div class="cert-bar"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// contact.py</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-subtitle">Looking for internships & entry-level Data Analyst roles. Let's connect!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item glass-card">
+            <div class="contact-icon">📧</div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:monuselvaraj67@gmail.com" id="email-link">monuselvaraj67@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item glass-card">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:9629804504" id="phone-contact-link">+91 9629804504</a>
+            </div>
+          </div>
+          <div class="contact-item glass-card">
+            <div class="contact-icon">💼</div>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="https://linkedin.com/in/monalisha-s-134575328" target="_blank" rel="noopener" id="linkedin-contact-link">monalisha-s-134575328</a>
+            </div>
+          </div>
+          <div class="contact-item glass-card">
+            <div class="contact-icon">🐙</div>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/monuselvaraj67-netizen" target="_blank" rel="noopener" id="github-contact-link">monuselvaraj67-netizen</a>
+            </div>
+          </div>
+          <div class="contact-item glass-card">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Location</h4>
+              <span>Salem, Tamil Nadu, India</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form glass-card" id="contactForm">
+          <div class="form-group">
+            <label for="contact-name">Your Name</label>
+            <input type="text" id="contact-name" name="name" placeholder="Recruiter Name" required />
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Your Email</label>
+            <input type="email" id="contact-email" name="email" placeholder="recruiter@company.com" required />
+          </div>
+          <div class="form-group">
+            <label for="contact-subject">Subject</label>
+            <input type="text" id="contact-subject" name="subject" placeholder="Data Analyst Internship Opportunity" />
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="5" placeholder="Hi Monalisha, we'd love to discuss an opportunity with you..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full" id="contact-submit">
+            <span>Send Message</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✅ Thank you! I'll respond to you shortly.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span><strong>Monalisha S</strong><span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-text">
+        Data Analyst Aspirant | B.Tech AI & DS @ AVS Engineering College, Salem
+      </p>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/monalisha-s-134575328" target="_blank" rel="noopener" id="footer-linkedin">LinkedIn</a>
+        <span>·</span>
+        <a href="https://github.com/monuselvaraj67-netizen" target="_blank" rel="noopener" id="footer-github">GitHub</a>
+        <span>·</span>
+        <a href="mailto:monuselvaraj67@gmail.com" id="footer-email">Email</a>
+      </div>
+      <p class="footer-sub">© 2024 Monalisha S · All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
