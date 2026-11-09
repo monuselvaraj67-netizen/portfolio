@@ -262,3 +262,41 @@ function initActiveNavLinks() {
 
   sections.forEach(s => observer.observe(s));
 }
+
+
+// ===== PROJECT IMAGE LIGHTBOX =====
+function initProjectLightbox() {
+  const previewImgs = document.querySelectorAll('.project-preview-img');
+  
+  previewImgs.forEach(img => {
+    img.addEventListener('click', () => {
+      // Create overlay
+      const overlay = document.createElement('div');
+      overlay.className = 'lightbox-overlay';
+      document.body.appendChild(overlay);
+      
+      // Expand image
+      img.classList.add('expanded');
+      document.body.style.overflow = 'hidden';
+      
+      // Close on overlay click
+      overlay.addEventListener('click', () => {
+        img.classList.remove('expanded');
+        overlay.remove();
+        document.body.style.overflow = '';
+      });
+      
+      // Close on ESC
+      document.addEventListener('keydown', function escHandler(e) {
+        if (e.key === 'Escape') {
+          img.classList.remove('expanded');
+          overlay.remove();
+          document.body.style.overflow = '';
+          document.removeEventListener('keydown', escHandler);
+        }
+      });
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', initProjectLightbox);
