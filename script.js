@@ -300,3 +300,37 @@ function initProjectLightbox() {
 }
 
 document.addEventListener('DOMContentLoaded', initProjectLightbox);
+
+
+// ===== PROFILE BG PARALLAX + SCROLL FADE =====
+function initProfileBgEffect() {
+  const profileImg = document.querySelector('.profile-bg-img');
+  const heroSection = document.querySelector('#home');
+  if (!profileImg || !heroSection) return;
+
+  // Parallax on mouse move (desktop only)
+  if (window.matchMedia('(hover: hover)').matches) {
+    document.addEventListener('mousemove', (e) => {
+      const xFraction = e.clientX / window.innerWidth;  // 0 → 1
+      const yFraction = e.clientY / window.innerHeight; // 0 → 1
+      const moveX = (xFraction - 0.5) * 18;  // ±9px
+      const moveY = (yFraction - 0.5) * 10;  // ±5px
+      profileImg.style.transform = `translateY(${moveY}px) translateX(${moveX}px) scale(1.01)`;
+    });
+  }
+
+  // Scroll: fade out when hero leaves viewport
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        document.body.classList.remove('scrolled-past-hero');
+      } else {
+        document.body.classList.add('scrolled-past-hero');
+      }
+    },
+    { threshold: 0.1 }
+  );
+  observer.observe(heroSection);
+}
+
+document.addEventListener('DOMContentLoaded', initProfileBgEffect);
