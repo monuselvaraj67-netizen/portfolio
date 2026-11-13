@@ -302,24 +302,43 @@ function initProjectLightbox() {
 document.addEventListener('DOMContentLoaded', initProjectLightbox);
 
 
-// ===== PROFILE BG PARALLAX + SCROLL FADE =====
+// ===== PROFILE BG CURSOR FOLLOW PARALLAX =====
 function initProfileBgEffect() {
   const profileImg = document.querySelector('.profile-bg-img');
   const heroSection = document.querySelector('#home');
   if (!profileImg || !heroSection) return;
 
-  // Parallax on mouse move (desktop only)
-  if (window.matchMedia('(hover: hover)').matches) {
-    document.addEventListener('mousemove', (e) => {
-      const xFraction = e.clientX / window.innerWidth;  // 0 → 1
-      const yFraction = e.clientY / window.innerHeight; // 0 → 1
-      const moveX = (xFraction - 0.5) * 18;  // ±9px
-      const moveY = (yFraction - 0.5) * 10;  // ±5px
-      profileImg.style.transform = `translateY(${moveY}px) translateX(${moveX}px) scale(1.01)`;
-    });
+  // Smooth cursor-follow using lerp (linear interpolation)
+  let targetX = 0, targetY = 0;
+  let currentX = 0, currentY = 0;
+  let animFrame;
+
+  function lerp(a, b, t) { return a + (b - a) * t; }
+
+  function animateFollow() {
+    // Smoothly interpolate toward target (0.07 = smoothness)
+    currentX = lerp(currentX, targetX, 0.07);
+    currentY = lerp(currentY, targetY, 0.07);
+
+    // Center-based transform + cursor follow
+    profileImg.style.transform =
+      `translate(calc(-50% + ${currentX}px), calc(-50% + ${currentY}px)) scale(1.03)`;
+
+    animFrame = requestAnimationFrame(animateFollow);
   }
 
-  // Scroll: fade out when hero leaves viewport
+  if (window.matchMedia('(hover: hover)').matches) {
+    document.addEventListener('mousemove', (e) => {
+      const xFraction = (e.clientX / window.innerWidth)  - 0.5; // -0.5 to +0.5
+      const yFraction = (e.clientY / window.innerHeight) - 0.5;
+      targetX = xFraction * 50;   // max ±25px horizontal move
+      targetY = yFraction * 35;   // max ±17px vertical move
+    });
+
+    animateFollow(); // start loop
+  }
+
+  // Scroll: fade when past hero
   const observer = new IntersectionObserver(
     ([entry]) => {
       if (entry.isIntersecting) {
